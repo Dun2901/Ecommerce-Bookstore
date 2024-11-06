@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import LoginPage from "./pages/login";
 import ContactPage from "./pages/contact";
 import BookPage from "./pages/book";
+import RegisterPage from "./pages/register";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -39,6 +39,10 @@ export default function App() {
     {
       path: "/login",
       element: <LoginPage />,
+    },
+    {
+      path: "/register",
+      element: <RegisterPage />,
     },
   ]);
 
